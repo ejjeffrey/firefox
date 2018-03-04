@@ -1,0 +1,8 @@
+/* Don't show anything in a new tab page (Activity Stream, etc.) */
+@-moz-document url("about:newtab") { * { display: none !important; } }
+
+/* about:accounts: Sync-related page */
+@-moz-document url("about:accounts") { * { display: none !important; } }
+
+/* about:preferences: Firefox Account */
+@-moz-document url("about:preferences") { #category-sync { display: none !important; } }

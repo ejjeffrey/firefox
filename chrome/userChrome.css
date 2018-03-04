@@ -1,0 +1,88 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Right click on page: Send Page to Device */
+#context-sendpagetodevice, #context-sep-sendpagetodevice { display: none !important; }
+
+/* Right click on tab: Send Tab to Device */
+#context_sendTabToDevice, #context_sendTabToDevice_separator { display: none !important; }
+
+/* Right click on link: Send Link to Device */
+#context-sendlinktodevice, #context-sep-sendlinktodevice { display: none !important; }
+
+/* Page action ellipsis: Send Tab to Device */
+#pageAction-panel-sendToDevice { display: none !important; }
+
+/* List menu: Sign in to Sync */
+#appMenu-fxa-container, #appMenu-fxa-container + toolbarseparator { display: none !important; }
+
+/* List menu: Library -> Synced Tabs */
+#appMenu-library-remotetabs-button { display: none !important; }
+
+/* Sidebar: Synced Tabs */
+#sidebar-switcher-tabs { display: none !important; }
+
+/* Customize page: Synced Tabs */
+#wrapper-sync-button { display: none !important; }
+
+/* Menu Bar: View -> Sidebar -> Synced Tabs */
+#menu_tabsSidebar { display: none !important; }
+
+/* Menu Bar: Tools -> Sign In To Sync... */
+#sync-setup { display: none !important; }
+
+/* Back button */
+/* #back-button { display: none !important; } */
+
+/* Forward button */
+/* #forward-button { display: none !important; } */
+
+/* Page action button */
+#pageActionButton { display: none !important; }
+
+/* Stop/Reload button */
+/* #stop-reload-button { display: none !important; } */
+
+/* Home button */
+#home-button { display: none !important; }
+
+/* Library button */
+#library-button { display: none !important; }
+
+/* Sidebar button */
+#sidebar-button { display: none !important; }
+
+/* Downloads button */
+#downloads-button { display: none !important; }
+
+/* Spacing of urlbar */
+#customizableui-special-spring1, #customizableui-special-spring2 { display: none !important; }
+
+/* Disable right-side menu button */
+/* #PanelUI-button { display: none !important; } */
+
+/* Disable down arrow caret in urlbar */
+.urlbar-history-dropmarker { display: none !important; }
+
+/* urlbar bookmark button */
+/* #star-button-box { display: none !important; } */
+
+/* urlbar i with a circle and the HTTPS lock icon */
+/* #identity-box { display: none !important; } */
+
+/* New tab button */
+/* .tabs-newtab-button { display: none !important; } */
+
+/* Tab close button */
+/* .tab-close-button { display: none !important; } */
+
+/* Sound playing tab icon */
+/* .tab-icon-sound { display: none !important; } */
+
+/* Tab bar scroll left button */
+.scrollbutton-up { display: none !important; }
+
+/* Tab bar scroll right button */
+.scrollbutton-down { display: none !important; }
+
+/* Tab bar all tabs button */
+#alltabs-button { display: none !important; }
