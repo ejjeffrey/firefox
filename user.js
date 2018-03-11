@@ -25,6 +25,7 @@
 // https://bugzilla.mozilla.org
 // https://blog.mozilla.org/security
 
+// Disable this just cause it's debug
 user_pref("browser.uiCustomization.debug", false);
 
 // Disable passive key listeners
