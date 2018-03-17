@@ -25,22 +25,23 @@
 // https://bugzilla.mozilla.org
 // https://blog.mozilla.org/security
 
+// Disable IPv6
+user_pref("network.dns.disableIPv6", true);
+user_pref("network.http.fast-fallback-to-IPv4", true);
+
+// Disable slowStartup stuff
+user_pref("browser.slowStartup.notificationDisabled", true);
+user_pref("browser.slowStartup.maxSamples", 0);
+user_pref("browser.slowStartup.samples", 0);
+
 // Disable this just cause it's debug
 user_pref("browser.uiCustomization.debug", false);
 
 // Disable passive key listeners
-//user_pref("apz.keyboard.passive-listeners", false);
-
-// Disable JavaScript JIT
-//user_pref("javascript.options.baselinejit", false);
-//user_pref("javascript.options.ion", false);
-//user_pref("javascript.options.ion.offthread_compilation", false);
+user_pref("apz.keyboard.passive-listeners", false);
 
 // Disable async stack
-//user_pref("javascript.options.asyncstack", false);
-
-// Disable memory cache
-//user_pref("browser.cache.memory.enable", false);
+user_pref("javascript.options.asyncstack", false);
 
 // Don't know
 user_pref("general.useragent.compatMode.firefox", false);
@@ -251,15 +252,12 @@ user_pref("middlemouse.contentLoadURL", false);
 
 // Disable SPDY / HTTP2
 user_pref("network.http.spdy.enabled", false);
+user_pref("network.http.spdy.enabled.v3-1", false);
 user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);
 
 // Remove special permissions for Mozilla domains
 user_pref("permissions.manager.defaultsUrl", "");
-
-// Disable hardware acceleration
-//user_pref("layers.acceleration.disabled", true);
-//user_pref("layers.acceleration.force-enabled", false);
 
 // Disable underline offset handling
 user_pref("font.blacklist.underline_offset", "");
@@ -547,6 +545,7 @@ user_pref("general.useragent.locale", "en-US");
 user_pref("geo.enabled", false);
 user_pref("geo.provider.ms-windows-location", false);
 user_pref("geo.wifi.uri", "");
+user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.provider.use_gpsd", false);
 
 // Effectively disable reader mode - implemented in Firefox 56
@@ -784,6 +783,9 @@ user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("security.csp.enable", true);
 user_pref("security.csp.enableStrictDynamic", true);
 user_pref("security.csp.experimentalEnabled", true);
+
+// Disable CSP security violation events
+user_pref("security.csp.enable_violation_events", false);
 
 // Make sure there is a delay when adding add-ons before Add button is enabled
 user_pref("security.dialog_enable_delay", 1000);
@@ -1124,7 +1126,8 @@ user_pref("social.share.activationPanelEnabled", false);
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
-user_pref("toolkit.telemetry.server", "");
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("toolkit.telemetry.cachedClientID", "");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.ping-centre.log", false);
 user_pref("browser.ping-centre.production.endpoint", "");
@@ -1143,10 +1146,11 @@ user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabledFirstSession", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
-user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
 
 // Disable system extension updates, only get system extension updates when Firefox itself is updated
 user_pref("extensions.systemAddon.update.url", "");
