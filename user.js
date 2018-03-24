@@ -255,6 +255,7 @@ user_pref("network.http.spdy.enabled", false);
 user_pref("network.http.spdy.enabled.v3-1", false);
 user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);
+user_pref("network.http.spdy.enabled.http2draft", false);
 
 // Remove special permissions for Mozilla domains
 user_pref("permissions.manager.defaultsUrl", "");
@@ -1144,6 +1145,8 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.shield-recipe-client.first_run", false);
 user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.api_url", "");
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
@@ -1214,6 +1217,7 @@ user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("datareporting.policy.firstRunURL", "");
 
 // Disable identity as much as possible
+user_pref("identity.fxaccounts.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("identity.fxaccounts.remote.email.uri", "");
 user_pref("identity.fxaccounts.remote.force_auth.uri", "");
