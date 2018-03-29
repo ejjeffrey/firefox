@@ -25,6 +25,9 @@
 // https://bugzilla.mozilla.org
 // https://blog.mozilla.org/security
 
+// DOM Popup Maximum - max # of popups for a given event
+user_pref("dom.popup_maximum", 0);
+
 // Disable IPv6
 user_pref("network.dns.disableIPv6", true);
 user_pref("network.http.fast-fallback-to-IPv4", true);
