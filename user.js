@@ -518,6 +518,9 @@ user_pref("privacy.resistFingerprinting", true);
 // Disable mozAddonManager web API
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 
+// Auto decline canvas permission prompts
+user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", true);
+
 // Reduce timing precision
 user_pref("privacy.reduceTimerPrecision", true);
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 20);
