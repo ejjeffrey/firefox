@@ -274,6 +274,7 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 
 // Display HTTP sites as insecure
 user_pref("security.insecure_connection_icon.enabled", true);
+user_pref("security.insecure_connection_text.enabled", true);
 
 // Disable disk cache
 user_pref("browser.cache.disk.enable", false);
